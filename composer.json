@@ -1,0 +1,27 @@
+{
+    "name": "crealab/lioren",
+    "description": "Package to consume Lioren API",
+    "require": {
+        "guzzlehttp/guzzle": "7.4.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Crealab\\Lioren\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Crealab\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jorge Fuentes",
+            "email": "j.fuentes.delaguarda@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit": "10.0.x-dev"
+    }
+}
