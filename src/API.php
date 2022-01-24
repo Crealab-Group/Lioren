@@ -27,7 +27,7 @@ class API{
      * Updates the access token used by the Client.
      * 
      * @param string $token Lioren access token.
-     * @return void
+     * @return API
      */
     public function authenticate(string $token){
         $this->token = $token;

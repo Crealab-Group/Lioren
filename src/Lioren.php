@@ -11,7 +11,15 @@ use Crealab\Lioren\LiorenInvoiceAuthorization;
 use Throwable;
 
 class Lioren{
+    /**
+     * Lioren autheification Token
+     * 
+     * @var string $token
+     * @see https://www.lioren.cl/docs#/api-auth
+     */
     private string $token;
+
+
 
     private array $instanceArray = [
         LiorenMisc::class,
@@ -25,11 +33,11 @@ class Lioren{
         $this->token = $token;
     }
 
-    public static function authenticate(string $token){
+    public static function authenticate(string $token):Lioren{
         return new self($token);
     }
 
-    private function resolveInstance($method){
+    private function resolveInstance($method):API{
         $instance = null;
         foreach ($this->instanceArray as $instanceable) {
             if(method_exists( $instanceable , $method )){
