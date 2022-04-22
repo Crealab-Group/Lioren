@@ -19,7 +19,7 @@ class LiorenInvoiceAuthorizationTest extends TestCase{
         $rCAF = $this->lioren->requestCAF();
         $this->assertInstanceOf(CAF::class, $rCAF);
     }
-
+ 
     public function testCAF(){
         $caf = $this->lioren->CAF();
         $this->assertInstanceOf(CAF::class, $caf);
