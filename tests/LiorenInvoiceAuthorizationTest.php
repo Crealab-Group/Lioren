@@ -8,6 +8,7 @@ use Crealab\Lioren\Lioren;
 class LiorenInvoiceAuthorizationTest extends TestCase{
     protected function setUp():void{
         $this->lioren = Lioren::authenticate( $_ENV['LIOREN_TOKEN']  );
+        $this->$data = ["39",100];
     }
     
     public function testInvoice(){
@@ -16,7 +17,7 @@ class LiorenInvoiceAuthorizationTest extends TestCase{
     }
 
     public function testRequestCAF(){
-        $rCAF = $this->lioren->requestCAF();
+        $rCAF = $this->lioren->requestCAF($this->$data);
         $this->assertInstanceOf(CAF::class, $rCAF);
     }
  

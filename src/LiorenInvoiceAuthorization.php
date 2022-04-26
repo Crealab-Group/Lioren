@@ -30,17 +30,6 @@ class LiorenInvoiceAuthorization extends API{
     }
 
     /**
-     * Obtain the index of CAFs
-     * 
-     * @param 
-     * @return
-     */
-    public function indexCAFs(){
-        //$response = $this->request('GET', 'cafs' , $data);
-        //Sin return de momento
-    }
-
-    /**
      * Get a specific invoice
      * 
      * @param
@@ -49,5 +38,16 @@ class LiorenInvoiceAuthorization extends API{
     public function invoice(array $data){
         $response = $this->request('GET', 'folios' , $data);
         return $this->transformIntoEntity( Invoice::class , $response );
+    }
+
+    /**
+     * Obtain the index of CAFs
+     * 
+     * @param 
+     * @return
+     */
+    public function indexCAFs(){
+        //$response = $this->request('GET', 'cafs' , $data);
+        //Sin return de momento
     }
 }
