@@ -4,8 +4,8 @@ namespace Crealab\Lioren;
 
 use Crealab\Lioren\Contracts\Arrayable;
 use ArrayAccess;
-
-class Entity implements Arrayable , ArrayAccess{
+use JsonSerializable;
+class Entity implements Arrayable , ArrayAccess, JsonSerializable{
     /**
      * Authentification token for the current instance
      * 
@@ -45,7 +45,7 @@ class Entity implements Arrayable , ArrayAccess{
      * @param string The key data to retrieve
      * @access public
      */
-    public function __get ($key):mixed {
+    public function __get ($key) {
         return $this->getAttribute($key);
     }
 
@@ -190,4 +190,7 @@ class Entity implements Arrayable , ArrayAccess{
         return null;
     }
 
+    public function jsonSerialize() {
+        return $this->toArray();
+    }
 }

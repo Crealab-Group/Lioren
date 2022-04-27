@@ -9,7 +9,7 @@
         <ini name="date.timezone" value="UTC" />
         <ini name="intl.default_locale" value="C.UTF-8" />
         <ini name="memory_limit" value="2048M" />
-        <env name="LIOREN_TOKEN" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0NTEiLCJqdGkiOiJiYjFlZGJmNmRjODYwNGY5NmYwYTgxZDZkNzQ2NDZhZTMzYWI0YjI2Mzk2NzAzZDQ4NWJlNzdkMDNjM2Y3YzE3ZDczYmQ0ZDA3NGM1MDcwYSIsImlhdCI6MTY1MTA4MDgxNCwibmJmIjoxNjUxMDgwODE0LCJleHAiOjE2ODI2MTY4MTQsInN1YiI6IjQ3NCIsInNjb3BlcyI6W119.mRigX89OkxdNm7o9xNQoRG8hAk8paTGEF1Ehj59A1v-fy325L8Wljbi5aHf37B38X5BBzbz-bBfrRhH31j8ld3IKuyJAJ-t7kEQzzcnb5wI213gpXzQ8I7QWoypquSA7efYpIXjs_6BvT7plmvllq1yIRNMzYOynfkK82_rmuWD8eS3lUxG9PL_m0oktr4RPHqFBQ0JHid9oGulfP89R9yip3uryDjoWkiaVsHA258O5gKUYJCoWME9TAdvK08TWKH-KhRfI9Z7Y_3G5cPzJKDdnMHGwtHuTjGvyhFmzHxr_Y8lFWeBM-jca6oY6GlapWJi78SF_vWShUhvLgAiRqHQ0EOxyfqxr11q_G7yXhjO9r60jTMJ006uWg4wWlGZ9z1o9VDGKCFzu-u37rah4T6s_jmXmZ8mquKBnnRwTb-lbCLc33fcpIdoihTccYpsGrc8jqaG-BM7Iz2P6MS9F_VCyx7dM2lUfU__7oN8Fbgq5DFd9tG_GVMkXS9jbq_UnPsLlgvLgKMgg0H0zpAa4sGSgW9iSF8XnNK4vxkN13XCKe2f20Xl6wSbg_zE_5RTqFGMKk5idiAPJ0p7vTX8ljxXz_7HnBEScM0d7qFik7G-TUx7t1EhDyWvM9mLqEJ0WkN3ETfu-QMaMVG2zB0-4bjLT5KaNw1Z3lwJ6V1zYtCA" />
+        <env name="LIOREN_TOKEN" value="" />
         <!--
         <env name="DB_CONNECTION" value="testing" />
         <env name="REDIS_HOST" value="127.0.0.1" />
