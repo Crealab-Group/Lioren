@@ -4,11 +4,12 @@ namespace Crealab\Lioren\Tests;
 
 use PHPUnit\Framework\TestCase;
 use Crealab\Lioren\Lioren;
+use Crealab\Lioren\Entities\CAF;
 
 class LiorenInvoiceAuthorizationTest extends TestCase{
     protected function setUp():void{
         $this->lioren = Lioren::authenticate( $_ENV['LIOREN_TOKEN']  );
-        $this->$data = ["39",100];
+        $this->data = ['tipodoc'=>'39','cantidad'=>100];
     }
     
     public function testInvoice(){
@@ -17,7 +18,7 @@ class LiorenInvoiceAuthorizationTest extends TestCase{
     }
 
     public function testRequestCAF(){
-        $rCAF = $this->lioren->requestCAF($this->$data);
+        $rCAF = $this->lioren->requestCAF($this->data);
         $this->assertInstanceOf(CAF::class, $rCAF);
     }
  
