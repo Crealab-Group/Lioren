@@ -4,6 +4,7 @@ namespace Crealab\Lioren;
 
 use Crealab\Lioren\API;
 use Crealab\Lioren\Entities\Invoice;
+use Crealab\Lioren\Entities\CAF;
 
 class LiorenInvoiceAuthorization extends API{
 
@@ -14,7 +15,7 @@ class LiorenInvoiceAuthorization extends API{
      * @return \Crealab\Lioren\Entities\CAF
      */
     public function requestCAF(array $data){
-        $response = $this->request('POST', 'cafs' , $data);
+        $response = $this->request('POST', 'cafs' , ['form_params' =>$data]);
         return $this->transformIntoEntity( CAF::class , $response );
     }
 
