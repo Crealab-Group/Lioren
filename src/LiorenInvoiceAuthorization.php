@@ -26,7 +26,7 @@ class LiorenInvoiceAuthorization extends API{
      * @return \Crealab\Lioren\Entities\CAF
      */
     public function CAF(array $data){
-        $response = $this->request('GET', 'cafs' , $data);
+        $response = $this->request('GET', 'cafs' , ['form_params' =>$data]);
         return $this->transformIntoEntity( CAF::class , $response );
     }
 
@@ -37,7 +37,7 @@ class LiorenInvoiceAuthorization extends API{
      * @return \Crealab\Lioren\Entities\Invoice
      */
     public function invoice(array $data){
-        $response = $this->request('GET', 'folios' , $data);
+        $response = $this->request('GET', 'folios' , ['form_params' =>$data]);
         return $this->transformIntoEntity( Invoice::class , $response );
     }
 
@@ -49,6 +49,6 @@ class LiorenInvoiceAuthorization extends API{
      */
     public function indexCAFs(){
         //$response = $this->request('GET', 'cafs' , $data);
-        //Sin return de momento
+        //Was put on hold
     }
 }
